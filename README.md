@@ -1,2 +1,2 @@
-# Englisg
+# English
 For learning English
