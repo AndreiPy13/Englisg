@@ -1,6 +1,31 @@
 import random
 import re
 
+Personal_propoun = {
+	'I': 'Я', 
+	'You': 'Ты',
+	'He': 'Он',
+	'She': 'Она',
+	'It': 'Оно'
+}
+
+
+Possessive_propoun = {
+	'My': 'Мой',
+	'Your': 'Твой',
+	'His': 'Его',
+	'Her': 'Её',
+	'Its': 'Его/Её для неодуш',
+	'Our': 'Наш',
+	'Your': 'Ваш',
+	'Their': 'Их'
+}
+
+
+
+
+
+
 
 Pronoun = {
 	'I': 'Я', 
@@ -9,6 +34,8 @@ Pronoun = {
 	'She': 'Она',
 	'It': 'Оно'
 }
+
+
 
 Pronoun_copy = {
 	
@@ -39,8 +66,8 @@ def number_objects_in_dicst():
 
 #Поиск при вводе темы для отгадывания
 def search_pronoun(string):
-	changed_string =  re.search(r'[Мм]естоимения|[Мм]ест|[Мм]естоим|[Мм]естоиме|[Мм]естоимен|\
-								[Мм]естоимени|[Vv]tcnjbvty|[Vv]tcnjbv|[Vv]tcnjb|[Vv]tcnj|[Vv]tcn', \
+	changed_string =  re.search(r'Мм]естоимения|[Мм]естоимени|[Мм]естоимен|[Мм]естоиме|[Мм]естоим| \
+								[Мм]естои|[Мм]есто|[Мм]ест|[Vv]tcnjbvty|[Vv]tcnjbv|[Vv]tcnjb|[Vv]tcnj|[Vv]tcn', \
 	 							string) #нужно доработать, потому что слово 'местоывфпаы' тоже пропускает :)
 	if changed_string:
 		return 'Местоимения'
