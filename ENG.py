@@ -1,5 +1,5 @@
-import random
-import re
+from choise_theme_of_thegame import ChoiseTheme
+from search import SearchWord
 
 Personal_propoun = {
 	'I': 'Я', 
@@ -27,14 +27,14 @@ Possessive_propoun = {
 
 
 
-Pronoun = {
-	'I': 'Я', 
-	'You': 'Ты',
-	'He': 'Он',
-	'She': 'Она',
-	'It': 'Оно'
-}
+def start_game():
+	ChoiseTheme().create_new_list_with_pronouns()
 
+
+start_game()
+
+<<<<<<< HEAD
+=======
 
 
 Pronoun_copy = {
@@ -127,6 +127,7 @@ def start_game_propouns():
 
 
 create_new_list_with_pronoums()
+>>>>>>> 1bf277f9fe2d4d1745de78c53f17e718401fde8b
 
 
 	
