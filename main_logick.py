@@ -15,6 +15,7 @@ class Logick():
 				return random.randint(0, how_obj)
 			break
 
+'''15/02/21 Здесь нужно заменить имена словарей, которые используются на прямую. Т.к в дальнейшем это будут переменные(Personal_propouns)'''
 
 #Проверка перевода
 	def start_game_propouns(self):

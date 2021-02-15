@@ -9,9 +9,14 @@ class ChoiseTheme():
 	def create_new_list_with_pronouns(self):
 		if ChoiseTheme().choise_theme_start() == 'Местоимения':
 			print('Выбрана тема: Местоимения')
+			#print('Какие местоимения хотетие переводить')
+			#propouns_theme = input('Тема:')
+            '''15/02/21Тут нужно решить, либо сделать "поиск" по вводу, либо же сразу предлагать доступные темы для ввода и сравнивать по ним.
+            Легче будет сразу предлагать темы, а в дальнейшем сделать поиск'''
 			for pronouns in Personal_propouns:
 				Pronoun_keys.append(pronouns)
 			return Logick().start_game_propouns()
+		
 
 
 	#Выбор темы для игры
@@ -29,4 +34,4 @@ class ChoiseTheme():
 			elif choise == 'Нет':
 				return print('До встречи :)')
 			else:
-				return print('Начните заново!')
+				return print('Некорректное значение ввода. Начните заново!')
