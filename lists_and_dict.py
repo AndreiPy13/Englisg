@@ -27,7 +27,7 @@ topics = [
 'Местоимения',
 ]
 
-#Словари с местоимениями
+#Словари с местоимениями:
 
 #Личные местоимения
 Personal_propouns = {
@@ -107,3 +107,7 @@ Negative_propouns = {
 	'None': 'Ни один из',
 	'Neither': 'Ни тот, ни другой'#(Ни один/Никто) 
 }
+
+#Cписок для добавления выбранных словарей
+Choises_dicts_theme = [Personal_propouns, Possessive_propouns, Possessive_propouns_ofthe_absolute_form, Demonstrative_propouns, \
+Reflexive_propouns, Interrogative_propouns, Negative_propouns]

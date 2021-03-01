@@ -2,6 +2,8 @@
 
 import re 
 
+
+
 Views_of_themes_in_pronouns = {
 	'Личные': 'Personal_propouns', 
 	'Притяжательные': 'Possessive_propouns', 
@@ -12,28 +14,23 @@ Views_of_themes_in_pronouns = {
 	'Отрицательные': 'Negative_propouns'
 }
 
+
+Personal_propouns = {
+	'I': 'Я', 
+	'You': 'Ты',
+	'He': 'Он',
+	'She': 'Она',
+	'It': 'Оно'
+}
+
 topics = [
 'Местоимения',
 ]
 
-print(type(Views_of_themes_in_pronouns))
-def choise_theme_start():
-	start = input('Выберите тему: ').capitalize()
-	checking_the_word = search_pronoun(start)
-	if checking_the_word in topics:
-		name = checking_the_word
-	return print(name)
+Views_of_themes_in_pronouns1 = [Personal_propouns, topics]
 
-
-def search_pronoun(string):
-	changed_string =  re.search(r'[Мм]естоимения|[Мм]ест|[Местоим]|[Местоиме]|[Местоимен]|[Местоимени]', string)
-	if changed_string:
-		return 'Местоимения'
-	else:
-		return False
-
-
-
-#choise_theme_start()
-
-
+#list_for_game = input('Введите тему: ')
+#choise_dict_pronouns = Views_of_themes_in_pronouns.get(list_for_game)
+#Views_of_themes_in_pronouns1.append(choise_dict_pronouns)
+print(Views_of_themes_in_pronouns1[0])
+#нужно превратить string в переменную
